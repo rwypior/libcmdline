@@ -1,0 +1,9 @@
+.vs/
+.cache/
+build/
+out/
+
+.vimsession
+compile_commands.json
+CMakeUserPresets.json
+CMakeSettings.json
