@@ -146,6 +146,11 @@ namespace cmdline
 			this->enablePred = pred;
 			return *this;
 		}
+
+		operator bool() const
+		{
+			return !this->value.empty();
+		}
 	};
 
 	// Arguments prefixed with hyphens
