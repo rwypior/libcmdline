@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.26)
 
+set(CMAKE_DEBUG_POSTFIX "d")
+
 project(libcmdline)
 
 include("cmake/create_compile_commands.cmake")
 
 add_library(libcmdline)
 add_library(libcmdline::libcmdline ALIAS libcmdline)
-
-set(CMAKE_DEBUG_POSTFIX "d")
 
 target_include_directories(libcmdline PUBLIC
 	"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
